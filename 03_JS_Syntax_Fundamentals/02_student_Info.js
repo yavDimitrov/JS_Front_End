@@ -1,6 +1,6 @@
-function solve (name, age, avgGrade) {
+function printStudentDetails (name, age, averageGrade) {
 
-    console.log('Name: ' + name + ', Age: ' + age + ', Grade: ' + avgGrade)
+    console.log(`Name:  ${name}, Age: ${age}, Grade: ${averageGrade}`)
 }
 
-solve('Steve', 16, 2.1426);
+printStudentDetails('Steve', 16, 2.1426);
