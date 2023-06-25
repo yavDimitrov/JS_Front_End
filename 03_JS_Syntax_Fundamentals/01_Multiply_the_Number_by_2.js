@@ -1,5 +1,8 @@
 function multiplyByTwo(a) {
-    console.log(a*2);
+
+    let result = a*2;
+    
+    console.log(result);
 }
 
 multiplyByTwo(4);
