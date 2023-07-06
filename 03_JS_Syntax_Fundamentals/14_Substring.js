@@ -1,15 +1,9 @@
-function substring(text, startIndex, endIndex) {
-    let substring = "";
+function sub_string(text, startIndex, endIndex) {
+ const subString = text.substring(startIndex, endIndex);
 
-    for(let index = 0; index < text.length; index++) {
-        if (index >= startIndex && index <= endIndex) {
-            substring += text[index];
-        }
-    }
-
-    console.log(substring);
+ console.log(subString);
 }
 
 
-substring ('ASentence', 1, 8);
+sub_string ('ASentence', 1, 8);
 
