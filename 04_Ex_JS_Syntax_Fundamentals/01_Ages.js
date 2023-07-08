@@ -1,4 +1,10 @@
 function ages (age) {
+
+    if(age < 0) {
+        console.log('out of bounds');
+        return;
+    }
+
     if (age >= 66) {
         console.log('elder');
     } else if (age >= 20) {
@@ -13,3 +19,5 @@ function ages (age) {
         console.log ('pot of bounds');
     }
 }
+
+ages(15);
