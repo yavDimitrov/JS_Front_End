@@ -1,4 +1,4 @@
-function solve(count, type, day) {
+function calculateVacationPrice(count, type, day) {
    const prices = {
       Students: {
          Friday: 8.45,
@@ -22,4 +22,4 @@ function solve(count, type, day) {
     console.log(`Total price: ${sum.toFixed(2)}`);
    }
 
-solve(30,"Students", "Sunday");
+   calculateVacationPrice(30,"Students", "Sunday");
