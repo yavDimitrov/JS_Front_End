@@ -3,8 +3,8 @@ function calculateFruitPrice (fruit, weightInGrams, pricePerKilogram) {
     const totalPrice = weightInKilograms * pricePerKilogram;
 
     console.log (
-        `I need ${totalPrice.toFixed(2)} to buy ${weightInKilograms.toFixed(2)} kilograms ${fruit}.`
+        `I need $${totalPrice.toFixed(2)} to buy ${weightInKilograms.toFixed(2)} kilograms ${fruit}.`
     )
 }
 
-calculateFruitPrice(`orabge`, 2500, 1.8)
+calculateFruitPrice(`orange`, 2500, 1.8)
