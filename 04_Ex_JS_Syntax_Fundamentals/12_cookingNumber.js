@@ -1,3 +1,5 @@
+`use stricked`;
+
 function cookNumber(number, ...commands) {
     let sum = Number(number);
 
@@ -5,8 +7,21 @@ function cookNumber(number, ...commands) {
         const command = commands[index];
         
         switch(command) {
-            case "chop":
+            case `chop`:
                 sum = sum /  2;
+                break;
+            case `dice` :
+                sum = Math.sqrt(sum);
+                break;
+            case `spice`:
+                sum += 1;
+                break;
+            case `bake` :
+                sum *= 3;
+                break;
+            case `fillet`:
+                sum -= sum*0.2;
+                break;
         }
 
         console.log(sum);
@@ -15,3 +30,4 @@ function cookNumber(number, ...commands) {
 
 
 cookNumber('32', 'chop', 'chop', 'chop', 'chop', 'chop');
+cookNumber('9', 'dice', 'spice', 'chop', 'bake', 'fillet');
