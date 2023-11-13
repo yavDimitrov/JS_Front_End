@@ -3,5 +3,4 @@ const printName = function (name) {
 }
 
 
-
-printName("Alex");
+console.log(printName);
