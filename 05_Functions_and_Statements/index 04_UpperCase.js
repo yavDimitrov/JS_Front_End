@@ -1,5 +1,5 @@
 function getUpperCaseName(name) {
-    return name.toUpperCase();
+    return name.toUpperCase() +"!";
 }
 
 
