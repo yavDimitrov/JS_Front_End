@@ -1,11 +1,11 @@
-function getUpperCaseName (name) {
-   if(!name) {
-    throw new Error();
-    //return "";
-   }
-   
-    return name
+function isValid(index, arr) {
+    if(Number.isInteger(index) && index >= 0 && index < arr.length){
+        return true;
+    } else {
+        return false;
+    }
 }
 
-const result = getUpperCaseName("Alex");
-console.log(result);
+function isValid(index, arr) {
+    return Number.isInteger(index) && index >=0 && index<arr.length;
+}
