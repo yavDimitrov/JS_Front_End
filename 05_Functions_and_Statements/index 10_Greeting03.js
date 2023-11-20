@@ -2,7 +2,7 @@ function greet (getMessage, name) {
   return getMessage() + " " + name;
 }
 
-function sayGoodMorning() {
+function getGreetingBasedOnHour() {
 
   const currentHour = new Date().getHours();
   console.log(currentHour);
@@ -19,7 +19,7 @@ function sayGoodMorning() {
   return "Good morning";
 }
 
-const greeting = greet(sayGoodMorning, "Alex");
+const greeting = greet(getGreetingBasedOnHour, "Alex");
 
 console.log(greeting);
 

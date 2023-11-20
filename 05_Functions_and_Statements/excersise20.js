@@ -1,0 +1,1 @@
+console.log("SplitMeIfYouCanHaHaYouCantOrYouCan".split(/(?=[A-Z])/));
