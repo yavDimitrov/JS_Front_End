@@ -8,7 +8,14 @@ function printLoadingBar(percentage) {
         }
     }
 
-    console.log(bar);
+    if(percentage === 100) {
+        console.log("100% Complete!");
+        console.log(`${bar}`);
+    } else {
+        console.log(`${percentage} ${bar}`);
+        console.log("Still loading...");
+    }
+
 }
 
-printLoadingBar(30);
+printLoadingBar(50);
