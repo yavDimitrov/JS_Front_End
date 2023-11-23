@@ -1,16 +1,14 @@
-function solve (num) {
-  let sum = 0;
-
-  for(let index = 1; index < num; index++) {
-    if(num % index === 0) {
-        sum += index;
+function printLoadingBar(percentage) {
+    let bar = "";
+    for(let index = 1; index <= 100; index += 10) {
+        if(index < percentage) {
+            bar += "%";
+        } else {
+            bar += "."
+        }
     }
-}
-if(sum === num) {
-    console.log("We have a perfect number!")
-} else {
-    console.log("It's not so perfect.")
-}
+
+    console.log(bar);
 }
 
-solve(6);
+printLoadingBar(30);
