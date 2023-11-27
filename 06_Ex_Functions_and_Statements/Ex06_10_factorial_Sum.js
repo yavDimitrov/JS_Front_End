@@ -1,17 +1,16 @@
+function calculateFactorial(num) {
+  let sum = 1;
+  for (let index = 1; index <= num; index ++) {
+    sum *= index;
+  }
+  return sum;
+}
+
 function solve(x, y) {
-  let sumX = 1;
-  let sumY = 1;
-
-  for(let index = 1; index <= x; index ++) {
-    sumX *= index;
-  }
-
-  for (let index =1; index *= y; index++) {
-    sumY *= index;
-  }
+   let sumX = calculateFactorial(x);
+   let sumY = calculateFactorial(y);
 
   return (sumX / sumY).toFixed(2);
 }
-
 
 console.log(solve(5, 2));
